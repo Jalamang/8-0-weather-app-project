@@ -33,6 +33,20 @@
                 <p><strong>Max Temperature: </strong>${weather.weather[2].mintempF}°F</p>
                 <p><strong>Min Temperature: </strong>${weather.weather[2].maxtempF}°F</p> 
                 </div>`
+
+                
+                    function getCityWeather(loc) {
+                        if (document.querySelector('.history .previous-search').firstElementChild.textContent === 'No previous search') {
+                            document.querySelector('.history .previous-search').firstElementChild.remove()
+                        }
+                        const li = document.createElement("li");
+                        //li.innerHTML += `<a href="https://wttr.in/${loc}" >${loc}</a> - ${weather.current_condition[0].FeelsLikeF} ` ;
+                        li.innerHTML += loc;
+                        document.querySelector('.history .previous-search').append(li);
+                        return li;
+                    }
+                    getCityWeather(city)
+                
               
             })
         event.target.reset();
