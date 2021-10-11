@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Weather App</title>
+  <link rel="stylesheet" href="./cypress/integration/main.css">
+  <script defer src="./cypress/integration//script.js"></script>
+</head>
+
+<body>
+
+  <!-- header section -->
+  <header>
+    <div class="weather-app grid-one">
+      <h1>Weather App</h1>
+      <form>
+        <label for="temperature"> <span> Pick a Location </span> </label>
+        <input id="temperature" name="temperature" type="text" placeholder="Enter a city" />
+        <input type="submit" value="Get Weather"></input>
+      </form>
+    </div>
+  </header>
+
+ <!-- history section -->
+ <div class="history grid-two" >
+  <label> Previous Searches </label> 
+ <ul class="previous-search"> 
+  <li>No previous search</li>
+ </ul> 
+</div>
+
+<!-- main section -->
+  <main class="display" placeholder="Choose a location to view weather">
+
+    <!-- current temperature section -->
+        <div class="current-temp grid-three" >
+        <p> choose a location to view weather</p>
+        </div>
+
+<!-- three-day temperature section -->
+         <div class="three-day-temp grid-four">
+                 
+        </div> 
+  </main>
+
+  <footer>
+    <p>
+      Created by Jalamang J.
+      <a href="https://joinpursuit.org">Join Pursuit.</a>
+    </p>
+  </footer>
+
+</body>
+
+</html>

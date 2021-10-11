@@ -58,8 +58,8 @@ Your web application should look similar to the screenshot below when the page i
 
 In particular, make sure the following is true:
 
-- [ ] The header should include the application's title.
-- [ ] The header should include a search form with a label, text input, and submit input.
+- [ x] The header should include the application's title.
+- [ x] The header should include a search form with a label, text input, and submit input.
 - [ ] The main section of the page contains placeholder text.
 - [ ] The sidebar includes the title "Previous Searches" and a message that lets the user know no searches have been made.
 - [ ] CSS Grid should be used to structure the page.
@@ -88,10 +88,10 @@ After multiple searches, the sidebar will continue to fill up with more searches
 The following features are required for your application. These features detail what is needed to pass the tests.
 
 - When a user arrives at the page, they should:
-  - [ ] See an `h1` with the text "Weather App" in the header.
-  - [ ] See a form in the header that includes both a text and submit input.
-  - [ ] See a `.display` element on the left side of the page, that suggests that they make a search.
-  - [ ] See a `.history` element on the right side of the page, that includes the text "Previous Searches".
+  - [ x] See an `h1` with the text "Weather App" in the header.
+  - [ x] See a form in the header that includes both a text and submit input.
+  - [ x] See a `.display` element on the left side of the page, that suggests that they make a search.
+  - [x ] See a `.history` element on the right side of the page, that includes the text "Previous Searches".
 - When a user enters text into the search form and presses submit, they should:
   - [ ] See the text disappear from the search bar.
   - [ ] See the name of the city that was searched as well as the area, region, country, and currently "feels like" temperature for that location.

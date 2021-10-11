@@ -13,5 +13,8 @@
   "devDependencies": {
     "cypress": "^8.2.0",
     "live-server": "^1.2.1"
+  },
+  "dependencies": {
+    "cypress-watch-and-reload": "^1.5.4"
   }
 }
