@@ -84,14 +84,14 @@ ul > li {
 
 .three-day-temp {
   display: flex;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   gap: 10px;
 text-align: center;
+border: 2px solid rgb(12, 10, 0);
 padding-left: 20px;
 }
 
 .today,.tomorrow,.day-after {
 font-weight: 10;
 font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-
 }
