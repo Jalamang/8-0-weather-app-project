@@ -17,8 +17,29 @@ header {
   grid-template-columns: repeat(3,1fr);
   grid-gap: 1em;
   height: 20vh;
-  
 }
+footer{
+  background-color: rgba(230, 209, 163, 0.52);
+  margin-left: 100px;
+  margin-right: 507px;
+}
+/* #Search{
+  width:480px;height:49px; border:3px solid black;
+  padding-left:48px;
+  padding-top:1px;
+  font-size:22px;color:blue;
+  background-image:url('images/search.jpg');
+  background-repeat:no-repeat;
+  background-position:center;outline:0;
+  } */
+  
+  #temperature::-webkit-search-cancel-button{
+      /* position:relative; */
+      /* right:20px;     */
+  }
+
+
+
 
 input{
   cursor: pointer;
@@ -73,8 +94,17 @@ ul > li {
   min-height: 70px;
   text-align: center;
   margin-right: 16px;
+  
 }
-
+ #reload{
+  margin-right: 35px;
+  width: 70px;
+  height: 25px;
+float: right;
+font-size: 15;
+font-family: cursive;
+border-radius: 10px 100px 120px;
+} 
 .three-day-temp {
   grid-row: 3;
   grid-column: 1 / span 4;
@@ -87,7 +117,7 @@ ul > li {
   grid-template-columns: 1fr 1fr 1fr;
   gap: 10px;
 text-align: center;
-border: 2px solid rgb(218, 182, 3);
+border: 2px solid rgb(12, 10, 0);
 padding-left: 20px;
 }
 

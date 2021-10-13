@@ -9,6 +9,7 @@ document.querySelector("form").addEventListener("submit", (event) => {
 });
 
 function getCityInfo(city) {
+  city = city[0].toUpperCase() + city.slice(1) 
   fetch(`https://wttr.in/${city}?format=j1`)
     .then((response) => response.json())
     .then((weather) => {
@@ -58,17 +59,19 @@ function getCityInfo(city) {
 
 
 function getCityWeather(loc, weather) {
-  
+
   //Jose M helped in removing the textNode b4 appending an li to the ul
   if (document.querySelector('.history .previous-search').firstElementChild.textContent === 'No previous search') {
     document.querySelector('.history .previous-search').firstElementChild.remove()
   }
   const removeLiDuplicates = document.querySelector('.grid-two')
- if (!removeLiDuplicates.textContent.includes(loc.toLowerCase())) {
+ if (!removeLiDuplicates.textContent.includes(loc)) {
   const li = document.createElement("li");
   li.innerHTML += `<a href="javascript:getCityInfo('${loc}')">${loc} -${weather.current_condition[0].FeelsLikeF}°F</a>`;
   document.querySelector("ul").append(li);
 }
 }
-  
- 
+document.querySelector('#reload').addEventListener('click', ()=>{
+   //const url = 'http://127.0.0.1:5500/index.html'
+   location.reload();
+ })
