@@ -18,6 +18,7 @@ header {
   grid-gap: 1em;
   height: 20vh;
 }
+
 footer{
   background-color: rgba(230, 209, 163, 0.52);
   margin-left: 100px;
@@ -33,10 +34,13 @@ footer{
   background-position:center;outline:0;
   } */
   
-  #temperature::-webkit-search-cancel-button{
+  /* puts the x icon to remove text from search field
+  Source:: => https://davidwalsh.name/remove-clear-search
+   */
+  #search::-webkit-search-cancel-button
       /* position:relative; */
       /* right:20px;     */
-  }
+  
 
 
 
